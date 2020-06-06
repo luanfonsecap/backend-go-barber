@@ -43,4 +43,4 @@ app.use((err: Error, req: Request, res: Response, _: NextFunction) => {
 });
 
 // eslint-disable-next-line no-console
-app.listen(3334, () => console.log('🔥️ Server started.'));
+app.listen(3333, () => console.log('🔥️ Server started.'));

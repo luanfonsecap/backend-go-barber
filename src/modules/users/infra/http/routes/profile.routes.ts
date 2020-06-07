@@ -14,7 +14,7 @@ const schema = Joi.object()
 		email: Joi.string().email(),
 		old_password: Joi.string(),
 		password: Joi.string(),
-		password_confirmation: Joi.string().valid(Joi.ref('password')),
+		passwordConfirmation: Joi.string().valid(Joi.ref('password')),
 	})
 	.and('old_password', 'password');
 

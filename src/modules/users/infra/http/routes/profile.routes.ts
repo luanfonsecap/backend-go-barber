@@ -12,11 +12,11 @@ const schema = Joi.object()
 	.keys({
 		name: Joi.string(),
 		email: Joi.string().email(),
-		old_password: Joi.string(),
+		oldPassword: Joi.string(),
 		password: Joi.string(),
 		passwordConfirmation: Joi.string().valid(Joi.ref('password')),
 	})
-	.and('old_password', 'password');
+	.and('oldPassword', 'password');
 
 profileRouter.use(ensureAuthenticated);
 
